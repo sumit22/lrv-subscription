@@ -15,3 +15,7 @@ Project Setup
     MAIL_PORT=2525
     MAIL_USERNAME=*******e8c86
     MAIL_PASSWORD=*********18b```
+
+7. RUN THE ENVIRONMENT, run following commands in separate terminal tabs/instances
+```php artisan serve //start dev server
+php artisan queue:work //start queue worker```
