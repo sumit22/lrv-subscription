@@ -10,6 +10,7 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable
 {
     use HasFactory, Notifiable;
+    use \Laravel\Sanctum\HasApiTokens;
 
     /**
      * The attributes that are mass assignable.
@@ -43,5 +44,9 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    public function via() {
+        return ['mail'];
     }
 }
