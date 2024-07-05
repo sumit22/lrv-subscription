@@ -17,5 +17,9 @@ Project Setup
     MAIL_PASSWORD=*********18b```
 
 7. RUN THE ENVIRONMENT, run following commands in separate terminal tabs/instances
-```php artisan serve //start dev server
-php artisan queue:work //start queue worker```
+
+```
+    php artisan serve //start dev server
+
+    php artisan queue:work //start queue worker
+```
